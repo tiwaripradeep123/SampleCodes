@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructure\DataStructure.csproj", "{8AB3F672-2338-49FA-A42F-41C4221DCD23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCode", "SampleCodes\SampleCode.csproj", "{81A86561-73DC-4F6A-A40D-4756DEF5B988}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AB3F672-2338-49FA-A42F-41C4221DCD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB3F672-2338-49FA-A42F-41C4221DCD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB3F672-2338-49FA-A42F-41C4221DCD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB3F672-2338-49FA-A42F-41C4221DCD23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A86561-73DC-4F6A-A40D-4756DEF5B988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A86561-73DC-4F6A-A40D-4756DEF5B988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A86561-73DC-4F6A-A40D-4756DEF5B988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A86561-73DC-4F6A-A40D-4756DEF5B988}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
