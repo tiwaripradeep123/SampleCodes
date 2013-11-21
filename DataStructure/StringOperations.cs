@@ -108,5 +108,43 @@ namespace DataStructure
         
         }
 
+        /// <summary>
+        /// Find if two strings are anagram
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
+        internal string AreAnagram(string p1, string p2)
+        {
+            if (p1 == null || string.IsNullOrWhiteSpace(p1) || p2 == null || string.IsNullOrWhiteSpace(p2) || p1.Length != p2.Length)
+            {
+                return false.ToString();
+            }
+            else
+            {
+                int[] counts = new int[256];
+
+                int index = -1;
+
+                while (++index < p1.Length )
+                {
+                    counts[p1[index]] += 1;
+                }
+
+                while (--index != 0)
+                {
+                    if (counts[p2[index]] <= 0)
+                    {
+                        return false.ToString();
+                    }
+                    else
+                    {
+                        counts[p2[index]] -= 1;
+                    }
+                }
+
+                return true.ToString();
+            }
+        }
     }
 }
