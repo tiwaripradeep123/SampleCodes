@@ -11,26 +11,18 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
-            StackX stack = new StackX();
-            Console.Write("  " + stack.Pop() + "  ");
-            Console.Write("  " + stack.Pop() + "  ");
-            stack.Push(new Node() { Data = 11 });
-            stack.Push(new Node() { Data = 12 });
-            stack.Push(new Node() { Data = 13 });
-            stack.Push(new Node() { Data = 14 });
-            stack.Push(new Node() { Data = 15 });
-            stack.Push(new Node() { Data = 16 });
-            Console.Write("  " + stack.Pop() + "  ");
-            Console.Write("  " + stack.Pop() + "  ");
-            stack.Push(new Node() { Data = 110 });
-            Console.Write("  " + stack.Pop() + "  ");
-            Console.Write("  " + stack.Pop() + "  ");
-            Console.Write("  " + stack.Pop() + "  ");
-            stack.Push(new Node() { Data = 1010 });
-            while (!stack.IsEmpty())
-            {
-                Console.Write("  " + stack.Pop() + "  ");
-            }
+            StringOperations operations = new StringOperations();
+            string input = "This is string to reverse";
+
+            Console.WriteLine(operations.ReverseAStringUsingRecursion(input, input.Length));
+            Console.WriteLine(operations.ReverseAStringUsingStack(input));
+
+            Console.WriteLine(operations.FindIFStringHasUniqueChars("a"));
+            Console.WriteLine(operations.FindIFStringHasUniqueChars("aA"));
+            Console.WriteLine(operations.FindIFStringHasUniqueChars("alah"));
+            Console.WriteLine(operations.FindIFStringHasUniqueChars("thisunqe"));
+
+            Console.WriteLine(operations.ReverseANumber(123456));
 
             Console.ReadLine();
         }
