@@ -28,6 +28,21 @@ namespace DataStructure
             Console.WriteLine(operations.AreAnagram("pradeep", "deeppra"));
             Console.WriteLine(operations.AreAnagram("and", "ann"));
 
+
+            // Matrix problems 
+
+            Matrix matrix = new Matrix();
+           var chars =  matrix.StoreAToZCharsIntoSquareMatrix();
+
+           for (int i = 0; i < chars.GetLength(0); i++)
+           {
+               for (int j = 0; j < chars.GetLength(1); j++)
+               {
+
+               }
+           }
+
+
             Console.ReadLine();
         }
     }
