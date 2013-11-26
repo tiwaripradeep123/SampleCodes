@@ -7,8 +7,36 @@ namespace DataStructure
     class StringOperations
     {
 
+        /// <summary>
+        /// Write a program to find the unique char in the ascii string.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public string FindUniqueChars(string input = "This is an input")
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return null;
+            }
 
+            bool []flags = new bool[256];
+            int index = 0;
 
+            while (index < input.Length)
+            {
+                if (!flags[input[index]])
+                {
+                    flags[input[index]] = true;
+                    index++;
+                }
+                else
+                {
+                    input = input.Remove(index, 1);
+                }
+            }
+
+            return input;
+        }
         
 
         public int ReverseANumber(int number)

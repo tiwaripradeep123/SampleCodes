@@ -28,20 +28,26 @@ namespace DataStructure
             Console.WriteLine(operations.AreAnagram("pradeep", "deeppra"));
             Console.WriteLine(operations.AreAnagram("and", "ann"));
 
+            operations.FindUniqueChars(string.Empty);
+            operations.FindUniqueChars(null);
+            Console.WriteLine(operations.FindUniqueChars("abcccdeffghijklmnopppppppppabcccdeffghijklmnopppppppppabcqrstuvwxyzccdeffghijklmnopppppppppabcccdeffghijklmnopppppppppabcccdeffghijklmnoppppppppp"));
+            Console.WriteLine(operations.FindUniqueChars());
+
 
             // Matrix problems 
 
             Matrix matrix = new Matrix();
-           var chars =  matrix.StoreAToZCharsIntoSquareMatrix();
+            var chars = matrix.StoreAToZCharsIntoSquareMatrix();
 
-           for (int i = 0; i < chars.GetLength(0); i++)
-           {
-               for (int j = 0; j < chars.GetLength(1); j++)
-               {
+            char[] chars1 = new char[100];
+            char A = 'A';
+            
+            for (int i = 0; i < 26; i++)
+            {
+                chars1[i] = A++;
+            }
 
-               }
-           }
-
+            Console.WriteLine(new string(chars1));
 
             Console.ReadLine();
         }
