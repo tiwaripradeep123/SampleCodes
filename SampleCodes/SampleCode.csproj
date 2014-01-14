@@ -46,10 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DelegatesSample.cs" />
     <Compile Include="EnumerableClass.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DesignPatterns\SingletonPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

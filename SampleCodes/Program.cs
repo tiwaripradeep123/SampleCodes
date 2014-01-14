@@ -16,30 +16,40 @@ namespace SampleCode
     {
         static void Main(string[] args)
         {
+            SingletonPattern singleton = SingletonPattern.SingletonObject;
 
-            Persons IndianCommunity = new Persons();
-            for (int i = 0; i < 10; i++)
-            {
-                IndianCommunity.Add(new Person() { Age = i, Name = "str" + i.ToString() });
-            }
+            Worker Peter = new Worker();
+            Boss b = new Boss();
+            Universe u = new Universe();
 
-            var enum1 = IndianCommunity.GetEnumerator();
+            Peter.Completed += b.WorkHasCompleted;
+            Peter.Completed += u.WorkHasCompleted;
 
-            while (enum1.MoveNext())
-            {
-                Console.WriteLine(enum1.Current.ToString());
-            }
+            Peter.DoWork();
 
-            Console.WriteLine(IndianCommunity[2].ToString());
+            //Persons IndianCommunity = new Persons();
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    IndianCommunity.Add(new Person() { Age = i, Name = "str" + i.ToString() });
+            //}
 
-            List<string> strList = new List<string>() { "str1", "str2", "str3", "str4", "str5", "str6" };
+            //var enum1 = IndianCommunity.GetEnumerator();
+
+            //while (enum1.MoveNext())
+            //{
+            //    Console.WriteLine(enum1.Current.ToString());
+            //}
+
+            //Console.WriteLine(IndianCommunity[2].ToString());
+
+            //List<string> strList = new List<string>() { "str1", "str2", "str3", "str4", "str5", "str6" };
 
 
-            Console.WriteLine(strList.ToArray().Aggregate( (x,y) => x+=y));
-            
+            //Console.WriteLine(strList.ToArray().Aggregate( (x,y) => x+=y));
 
 
-            //Console.WriteLine("Length =" + result.Result.Length);
+
+            ////Console.WriteLine("Length =" + result.Result.Length);
 
             Console.WriteLine("Waiting ..");
             Console.ReadLine();
