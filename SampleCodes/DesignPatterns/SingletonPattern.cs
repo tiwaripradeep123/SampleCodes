@@ -11,6 +11,7 @@ namespace SampleCode
         public static SingletonPattern SingletonObject;
         private static object lockObject = new object();
 
+
         /// <summary>
         /// Static constructor to initialize using double lock.
         /// </summary>
